@@ -1,0 +1,210 @@
+@import "reset.css";
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.screen-header {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffce33;
+  width: 100vw;
+  height: 120px;
+}
+
+.screen-header__column {
+  display: flex;
+  margin: 0px 10px 20px 10px;
+}
+
+.search-box {
+  z-index: 2;
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 90%;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-box span {
+  opacity: 0.2;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.anime-filed {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 90%;
+  height: 300px;
+  margin-top: 70px;
+}
+.anime-filed__first,
+.anime-filed__second,
+.anime-filed__third {
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.anime-filed__first > span {
+  display: flex;
+  font-weight: bolder;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.titan-infobox {
+  display: flex;
+  flex-direction: column;
+}
+
+.titan,
+.stars,
+.titan-info__genre,
+.titan-info__input {
+  display: flex;
+  flex-direction: row;
+}
+
+.titan-info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.titan-info__title {
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.titan-info__subtitle {
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+.titan > img {
+  margin-right: 16px;
+  width: 36%;
+  height: 36%;
+  border-radius: 10px;
+}
+
+.stars span {
+  display: flex;
+  padding-right: 5px;
+  color: #ffce33;
+  margin-bottom: 6px;
+}
+
+.titan-info__genre span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 24px;
+}
+.titan-info__genre span:nth-child(2) {
+  margin-left: 10px;
+}
+
+.titan-info__input-heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fede7c;
+  margin-right: 30px;
+}
+
+.titan-info__input-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.anime-filed__second {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: visible;
+}
+.one-pick__box {
+  display: flex;
+  flex-direction: row;
+}
+.one-pick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin-right: 20px;
+  overflow: auto;
+}
+
+.one-pick img {
+  width: 100px;
+  height: 140px;
+  border-radius: 12px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.one-pick__stars {
+  color: #ffce33;
+  font-size: 8px;
+}
+
+.demon-slayer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.demon-slayer img {
+  width: 120px;
+  height: 160px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.demon-slayer__info span {
+  display: flex;
+
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.demon-slayer__info span:nth-child(2) {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
